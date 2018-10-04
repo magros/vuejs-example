@@ -19,5 +19,5 @@ export default {
    margin 10px 0
    img
       border 2px solid lightgrey
-      border-radius 3px   
+      border-radius 3px
 </style>
