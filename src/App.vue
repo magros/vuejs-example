@@ -1,7 +1,7 @@
 <template lang="pug">
 
 #app
-  img(src='./assets/logo.png')
+  img(src='/assets/logo.png')
   h1 PlatziMusic
   select(v-model="selectedCountry")
     option(v-for="country in countries" :value="country.value") {{ country.name }}
@@ -35,7 +35,7 @@ export default {
       refreshArtists(){
         const _self = this
         this.loading = true
-        this.artists = [] 
+        this.artists = []
         api.getArtists(this.selectedCountry)
          .then(function(artists){
            _self.artists = artists
